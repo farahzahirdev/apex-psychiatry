@@ -28,15 +28,15 @@ export default function Footer() {
             className="h-16 w-auto object-contain object-left sm:h-[4.5rem]"
             unoptimized
           />
-          <p className="mt-5 max-w-md text-sm leading-relaxed text-white/75">
+          <p className="apex-footer-body mt-5 max-w-md">
             Holistic, integrative psychiatry blending medication management, psychotherapy, and
             interventional treatments including TMS and Spravato®.
           </p>
         </div>
 
         <div>
-          <p className="font-semibold text-white">Contact</p>
-          <address className="mt-3 space-y-3 text-sm not-italic text-white/75">
+          <p className="apex-footer-heading">Contact</p>
+          <address className="apex-footer-body mt-3 space-y-3 not-italic">
             <p>
               <a href={PHONE_HREF} className="transition-colors hover:text-gold-soft">
                 {PHONE_DISPLAY}
@@ -49,7 +49,7 @@ export default function Footer() {
             </p>
             {LOCATIONS.map((loc) => (
               <p key={loc.name}>
-                <span className="block font-medium text-white/90">{loc.name}</span>
+                <span className="apex-footer-loc-name">{loc.name}</span>
                 {loc.address}
               </p>
             ))}
@@ -57,8 +57,8 @@ export default function Footer() {
         </div>
 
         <div>
-          <p className="font-semibold text-white">Explore</p>
-          <nav className="mt-3 flex flex-col gap-2 text-sm text-white/75">
+          <p className="apex-footer-heading">Explore</p>
+          <nav className="apex-footer-body mt-3 flex flex-col gap-2">
             <a href={`#${TMS_SECTION_ID}`} className="transition-colors hover:text-gold-soft">
               TMS Therapy
             </a>
@@ -87,8 +87,8 @@ export default function Footer() {
       </div>
 
       <div className="container-main border-t border-white/12 pb-8 pt-8">
-        <div className="max-w-4xl space-y-3 text-xs leading-relaxed text-white/55">
-          <p className="font-semibold text-white/80">Important information</p>
+        <div className="apex-footer-legal max-w-4xl space-y-3">
+          <p className="apex-footer-legal-title">Important information</p>
           <p>
             This page is for educational purposes and does not replace medical advice. Treatment
             decisions should be made with a qualified clinician. TMS and Spravato® are available by
@@ -100,7 +100,7 @@ export default function Footer() {
           </p>
         </div>
 
-        <div className="mt-6 flex flex-col items-start justify-between gap-2 border-t border-white/12 pt-5 text-xs text-white/50 sm:flex-row sm:items-center">
+        <div className="apex-footer-meta mt-6 flex flex-col items-start justify-between gap-2 border-t border-white/12 pt-5 sm:flex-row sm:items-center">
           <p>© {new Date().getFullYear()} Apex Interventional Psychiatry LLC. All rights reserved.</p>
           <p>TMS · Spravato® · CT · NY · FL</p>
         </div>

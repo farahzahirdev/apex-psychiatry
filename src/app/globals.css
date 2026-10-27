@@ -30,7 +30,7 @@
   --color-line: rgba(12, 48, 96, 0.12);
   --font-sans: "Montserrat", ui-sans-serif, system-ui, sans-serif;
   --font-display: "Cormorant Garamond", Georgia, "Times New Roman", serif;
-  --max-width-content: 1180px;
+  --max-width-content: 1300px;
 }
 
 html {
@@ -92,7 +92,10 @@ li {
 }
 
 .text-lead {
-  @apply text-lg leading-relaxed text-muted;
+  font-size: 1.05rem;
+  line-height: 1.65;
+  color: var(--color-muted);
+  font-family: var(--font-sans);
 }
 
 /* ——— Buttons ——— */
@@ -143,10 +146,19 @@ li {
   color: var(--color-navy);
   background: #fff;
   border: 1.5px solid rgba(40, 128, 112, 0.45);
-  padding-inline: 1rem;
+  padding-inline: 0.9rem;
   padding-block: 0.65rem;
-  font-size: 0.78rem;
+  font-size: 0.72rem;
   font-weight: 700;
+  letter-spacing: 0.02em;
+}
+
+.btn-header-cta {
+  padding-inline: 0.9rem !important;
+  padding-block: 0.65rem !important;
+  font-size: 0.72rem !important;
+  font-weight: 700;
+  letter-spacing: 0.02em;
 }
 
 .btn-phone-pill:hover {
@@ -549,19 +561,9 @@ li {
   display: grid;
   grid-template-columns: repeat(2, minmax(0, 1fr));
   border-radius: 1rem;
-  border: 1px solid rgba(255, 255, 255, 0.45);
-  background:
-    linear-gradient(
-      135deg,
-      rgba(52, 110, 168, 0.82) 0%,
-      rgba(26, 74, 124, 0.88) 48%,
-      rgba(20, 58, 99, 0.92) 100%
-    );
-  backdrop-filter: blur(18px) saturate(1.25);
-  -webkit-backdrop-filter: blur(18px) saturate(1.25);
-  box-shadow:
-    0 18px 48px rgba(12, 48, 96, 0.22),
-    inset 0 1px 0 rgba(255, 255, 255, 0.35);
+  border: 1px solid rgba(20, 58, 99, 0.35);
+  background: linear-gradient(135deg, #2a5f96 0%, #1a4a7c 48%, #143a63 100%);
+  box-shadow: 0 18px 48px rgba(12, 48, 96, 0.22);
   overflow: hidden;
 }
 
@@ -954,7 +956,7 @@ li {
 @media (max-width: 759px) {
   .apex-qualify {
     margin-top: -3.35rem;
-    padding-top: calc(clamp(4rem, 8vw, 6rem) + 3.35rem);
+    padding-top: calc(clamp(5.5rem, 12vw, 7.5rem) + 4.75rem);
   }
 }
 
@@ -1102,9 +1104,10 @@ a.apex-contact-item:hover {
 .apex-expect-list li {
   position: relative;
   padding-left: 1.6rem;
-  font-size: 0.98rem;
-  line-height: 1.5;
-  color: var(--color-ink);
+  font-size: 1.05rem;
+  line-height: 1.65;
+  color: var(--color-muted);
+  font-family: var(--font-sans);
 }
 
 .apex-expect-list li::before {
@@ -1159,6 +1162,20 @@ a.apex-contact-item:hover {
   color: #fff;
   flex-shrink: 0;
   margin-top: 0.15rem;
+}
+
+.apex-why-item .font-semibold {
+  font-size: 1.05rem;
+  line-height: 1.4;
+}
+
+.apex-why-desc {
+  display: block;
+  margin-top: 0.35rem;
+  font-size: 1.05rem;
+  line-height: 1.65;
+  color: var(--color-muted);
+  font-family: var(--font-sans);
 }
 
 .apex-why-media {
@@ -1384,9 +1401,10 @@ a.apex-contact-item:hover {
 
 .apex-location-address {
   margin: 0.45rem 0 0;
-  font-size: 0.92rem;
-  line-height: 1.5;
+  font-size: 1.05rem;
+  line-height: 1.65;
   color: var(--color-muted);
+  font-family: var(--font-sans);
 }
 
 /* ——— FAQ (2-col sticky media + accordion) ——— */
@@ -1411,9 +1429,10 @@ a.apex-contact-item:hover {
 .apex-faq-lede {
   margin: 0.9rem auto 0;
   max-width: 34rem;
-  font-size: 1.02rem;
+  font-size: 1.05rem;
   line-height: 1.65;
   color: var(--color-muted);
+  font-family: var(--font-sans);
 }
 
 .apex-faq-layout {
@@ -1501,7 +1520,7 @@ a.apex-contact-item:hover {
   padding: 1.15rem 1.25rem;
   text-align: left;
   font-family: var(--font-sans);
-  font-size: 0.98rem;
+  font-size: 1.05rem;
   font-weight: 700;
   color: var(--color-navy);
   background: transparent;
@@ -1554,9 +1573,10 @@ a.apex-contact-item:hover {
 .apex-faq-answer {
   margin: 0;
   padding: 0 1.25rem 1.2rem;
-  font-size: 0.98rem;
-  line-height: 1.7;
+  font-size: 1.05rem;
+  line-height: 1.65;
   color: var(--color-muted);
+  font-family: var(--font-sans);
   opacity: 0;
   transform: translateY(-6px);
   transition:
@@ -1659,6 +1679,55 @@ a.apex-contact-item:hover {
   background: #081f42;
   color: #fff;
   border-top: 1px solid rgba(212, 164, 74, 0.18);
+}
+
+.apex-footer-heading {
+  margin: 0;
+  font-size: 0.95rem;
+  font-weight: 700;
+  color: #fff;
+  font-family: var(--font-sans);
+}
+
+.apex-footer-body {
+  font-size: 0.9rem;
+  line-height: 1.65;
+  color: rgba(255, 255, 255, 0.75);
+  font-family: var(--font-sans);
+}
+
+.apex-footer-body a {
+  font-size: inherit;
+  line-height: inherit;
+}
+
+.apex-footer-loc-name {
+  display: block;
+  font-size: 0.9rem;
+  font-weight: 600;
+  color: rgba(255, 255, 255, 0.92);
+}
+
+.apex-footer-legal {
+  font-size: 0.85rem;
+  line-height: 1.65;
+  color: rgba(255, 255, 255, 0.6);
+  font-family: var(--font-sans);
+}
+
+.apex-footer-legal-title {
+  margin: 0;
+  font-size: 0.95rem;
+  font-weight: 700;
+  color: rgba(255, 255, 255, 0.9);
+  font-family: var(--font-sans);
+}
+
+.apex-footer-meta {
+  font-size: 0.8rem;
+  line-height: 1.5;
+  color: rgba(255, 255, 255, 0.55);
+  font-family: var(--font-sans);
 }
 
 /* ——— Reveal ——— */

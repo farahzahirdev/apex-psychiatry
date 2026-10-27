@@ -34,7 +34,7 @@ export default function WhyApex() {
                     </span>
                     <span>
                       <span className="block font-semibold text-navy">{item.title}</span>
-                      <span className="mt-1 block text-sm leading-relaxed text-muted">
+                      <span className="apex-why-desc">
                         {item.description}
                       </span>
                     </span>

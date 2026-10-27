@@ -242,7 +242,7 @@ export default function Header() {
             </a>
             <a
               href={`#${FORM_SECTION_ID}`}
-              className="btn btn-teal whitespace-nowrap !px-3.5 !py-2.5 !text-[0.68rem]"
+              className="btn btn-teal btn-header-cta whitespace-nowrap"
             >
               Find Out If You Qualify
             </a>
