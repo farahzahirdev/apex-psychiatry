@@ -406,22 +406,15 @@ li {
   z-index: 1;
   pointer-events: none;
   overflow: hidden;
-  background:
-    linear-gradient(
-      105deg,
-      rgba(6, 24, 52, 0.78) 0%,
-      rgba(6, 24, 52, 0.58) 28%,
-      rgba(6, 24, 52, 0.22) 52%,
-      rgba(6, 24, 52, 0.08) 72%,
-      transparent 100%
-    ),
-    linear-gradient(
-      180deg,
-      rgba(6, 24, 52, 0.35) 0%,
-      transparent 22%,
-      transparent 55%,
-      rgba(6, 24, 52, 0.55) 100%
-    );
+  /* Left to center only; right side of photo stays clear. */
+  background: linear-gradient(
+    90deg,
+    rgba(6, 24, 52, 0.82) 0%,
+    rgba(6, 24, 52, 0.68) 22%,
+    rgba(6, 24, 52, 0.35) 40%,
+    rgba(6, 24, 52, 0.1) 50%,
+    transparent 58%
+  );
 }
 
 .apex-hero-inner {
