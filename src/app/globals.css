@@ -1338,6 +1338,29 @@ a.apex-contact-item:hover {
   color: var(--color-navy);
 }
 
+@media (max-width: 639px) {
+  .apex-insurance-track {
+    gap: 0.65rem;
+    padding-inline: 0.4rem;
+  }
+
+  .apex-insurance-logo {
+    width: 8.25rem;
+    min-height: 3.85rem;
+    padding: 0.65rem 0.75rem;
+    border-radius: 0.75rem;
+  }
+
+  .apex-insurance-img {
+    height: 2rem;
+    max-width: 6.5rem;
+  }
+
+  .apex-insurance-text {
+    font-size: 0.78rem;
+  }
+}
+
 .apex-insurance-link {
   color: var(--color-teal-deep);
   font-weight: 700;
