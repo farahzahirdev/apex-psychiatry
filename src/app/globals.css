@@ -198,25 +198,18 @@ li {
   transform: translateY(-2px);
 }
 
-/* ——— Header (light, color logo) ——— */
+/* ——— Header (solid white, color logo) ——— */
 .site-header {
   position: sticky;
   top: 0;
   z-index: 60;
-  background: rgba(255, 255, 255, 0.86);
-  backdrop-filter: blur(16px) saturate(1.2);
-  -webkit-backdrop-filter: blur(16px) saturate(1.2);
-  border-bottom: 1px solid rgba(12, 48, 96, 0.08);
-  transition:
-    background 0.35s ease,
-    box-shadow 0.35s ease,
-    border-color 0.35s ease;
+  background: #ffffff;
+  border-bottom: 1px solid rgba(12, 48, 96, 0.1);
+  box-shadow: 0 8px 28px rgba(12, 48, 96, 0.08);
 }
 
 .site-header.is-solid {
-  background: rgba(255, 255, 255, 0.96);
-  box-shadow: 0 10px 36px rgba(12, 48, 96, 0.1);
-  border-bottom-color: rgba(12, 48, 96, 0.1);
+  background: #ffffff;
 }
 
 .site-header.is-menu-open {
@@ -225,7 +218,7 @@ li {
   top: 0;
   z-index: 90;
   width: 100%;
-  background: rgba(255, 255, 255, 0.98);
+  background: #ffffff;
   box-shadow: 0 10px 36px rgba(12, 48, 96, 0.12);
 }
 
