@@ -11,6 +11,7 @@ import {
   PHONE_HREF,
   SITE_NAME,
   SPRAVATO_SECTION_ID,
+  TEAM_SECTION_ID,
   TMS_SECTION_ID,
   WHY_SECTION_ID,
 } from "@/lib/constants";
@@ -19,6 +20,7 @@ const NAV_ITEMS = [
   { href: `#${TMS_SECTION_ID}`, label: "TMS Therapy" },
   { href: `#${SPRAVATO_SECTION_ID}`, label: "Spravato" },
   { href: `#${WHY_SECTION_ID}`, label: "Why Apex" },
+  { href: `#${TEAM_SECTION_ID}`, label: "Our Team" },
   { href: "#locations", label: "Locations" },
   { href: "#insurance", label: "Insurance" },
 ] as const;

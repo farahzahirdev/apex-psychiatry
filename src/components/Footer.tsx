@@ -10,6 +10,7 @@ import {
   PHONE_HREF,
   SITE_NAME,
   SPRAVATO_SECTION_ID,
+  TEAM_SECTION_ID,
   TMS_SECTION_ID,
   WEBSITE_URL,
   WHY_SECTION_ID,
@@ -67,6 +68,9 @@ export default function Footer() {
             </a>
             <a href={`#${WHY_SECTION_ID}`} className="transition-colors hover:text-gold-soft">
               Why Apex
+            </a>
+            <a href={`#${TEAM_SECTION_ID}`} className="transition-colors hover:text-gold-soft">
+              Our Team
             </a>
             <a href="#insurance" className="transition-colors hover:text-gold-soft">
               Insurance

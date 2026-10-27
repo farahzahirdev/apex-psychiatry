@@ -3,6 +3,7 @@ import InquiryForm from "@/components/InquiryForm";
 import TmsSection from "@/components/TmsSection";
 import SpravatoSection from "@/components/SpravatoSection";
 import WhyApex from "@/components/WhyApex";
+import TeamSection from "@/components/TeamSection";
 import InsuranceBar from "@/components/InsuranceBar";
 import Locations from "@/components/Locations";
 import Faq from "@/components/Faq";
@@ -16,6 +17,7 @@ export default function Home() {
       <TmsSection />
       <SpravatoSection />
       <WhyApex />
+      <TeamSection />
       <Locations />
       <InsuranceBar />
       <Faq />

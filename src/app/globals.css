@@ -390,7 +390,7 @@ li {
 .apex-hero-img {
   object-fit: cover;
   object-position: 72% 26%;
-  animation: hero-zoom 22s ease-out both;
+  /* No scale animation: transform zoom softens full-bleed photos */
 }
 
 @media (max-width: 759px) {
@@ -611,13 +611,14 @@ li {
 @media (max-width: 759px) {
   .apex-hero {
     height: auto;
-    min-height: min(100dvh, 780px);
+    min-height: min(78dvh, 640px);
     margin-bottom: 0;
   }
 
   .apex-hero-inner {
-    padding-top: clamp(4.75rem, 12vh, 6rem);
-    padding-bottom: clamp(6.75rem, 16vh, 9rem);
+    justify-content: flex-start;
+    padding-top: clamp(4.25rem, 9vh, 5.25rem);
+    padding-bottom: clamp(4.5rem, 9vh, 6rem);
   }
 
   .apex-hero-veil {
@@ -633,22 +634,45 @@ li {
 
   .apex-hero-copy {
     max-width: none;
-    margin-bottom: 2.75rem;
+    margin-top: 0.35rem;
+    margin-inline: auto;
+    margin-bottom: 1.35rem;
+    text-align: center;
   }
 
   .apex-hero-brand {
     font-size: clamp(1.45rem, 7vw, 1.85rem);
   }
 
+  .apex-hero-eyebrow {
+    align-items: center;
+    width: 100%;
+  }
+
+  .apex-hero-eyebrow::after {
+    margin-inline: auto;
+  }
+
   .apex-hero-title {
     font-size: clamp(1.85rem, 8vw, 2.35rem);
   }
 
+  .apex-hero-lede {
+    margin-inline: auto;
+  }
+
   .apex-hero-actions {
     flex-direction: column;
+    align-items: stretch;
+    justify-content: center;
   }
 
   .apex-hero-actions .btn {
+    width: 100%;
+  }
+
+  .apex-hero-call {
+    justify-content: center;
     width: 100%;
   }
 
@@ -1744,6 +1768,383 @@ a.apex-contact-item:hover {
   line-height: 1.5;
   color: rgba(255, 255, 255, 0.55);
   font-family: var(--font-sans);
+}
+
+/* ——— Team: owner row + horizontal care-team scroll ——— */
+.apex-team {
+  padding: 3.5rem 0 4rem;
+  overflow-x: clip;
+  background:
+    radial-gradient(ellipse 55% 50% at 8% 0%, rgba(40, 128, 112, 0.08), transparent 55%),
+    linear-gradient(180deg, #f7fafc 0%, #eef4f8 100%);
+}
+
+@media (max-width: 759px) {
+  .apex-team {
+    padding-bottom: 1.75rem;
+  }
+
+  /* Tighten space between team and the following Locations section */
+  #locations.section-padding {
+    padding-top: 2rem;
+  }
+}
+
+.apex-team-head {
+  max-width: 38rem;
+  margin: 0 auto 2rem;
+  text-align: center;
+}
+
+.apex-team-title {
+  margin-top: 0.75rem;
+  font-size: clamp(1.9rem, 3.4vw, 2.55rem);
+}
+
+.apex-team-lede {
+  margin-top: 1rem;
+  margin-inline: auto;
+}
+
+.apex-team-owner {
+  display: grid;
+  gap: 1.35rem;
+  align-items: center;
+  justify-items: center;
+  margin-bottom: 2.25rem;
+  text-align: center;
+}
+
+@media (min-width: 768px) {
+  .apex-team-head {
+    margin-inline: 0;
+    text-align: left;
+  }
+
+  .apex-team-lede {
+    margin-inline: 0;
+  }
+
+  .apex-team-owner {
+    grid-template-columns: minmax(200px, 260px) minmax(0, 1fr);
+    gap: 1.75rem 2rem;
+    justify-items: stretch;
+    text-align: left;
+  }
+}
+
+.apex-team-owner-frame {
+  position: relative;
+  width: min(100%, 16rem);
+  aspect-ratio: 1 / 1.08;
+  overflow: hidden;
+  border-radius: 1rem;
+  background: #e4ebf3;
+  margin-inline: auto;
+}
+
+@media (min-width: 768px) {
+  .apex-team-owner-frame {
+    width: 100%;
+    margin-inline: 0;
+  }
+}
+
+.apex-team-owner-body {
+  min-width: 0;
+  max-width: 36rem;
+}
+
+@media (min-width: 768px) {
+  .apex-team-owner-body {
+    max-width: none;
+  }
+}
+
+.apex-team-bio {
+  margin: 0.85rem auto 0;
+  font-size: 1.05rem;
+  line-height: 1.65;
+  color: var(--color-muted);
+  max-width: 36rem;
+  font-family: var(--font-sans);
+}
+
+@media (min-width: 768px) {
+  .apex-team-bio {
+    margin-inline: 0;
+    max-width: 40rem;
+  }
+}
+
+.apex-team-rail-wrap {
+  margin-top: 0.25rem;
+  width: 100%;
+  min-width: 0;
+}
+
+.apex-team-rail-label {
+  margin: 0 0 0.85rem;
+  font-family: var(--font-sans);
+  font-size: 0.75rem;
+  font-weight: 700;
+  letter-spacing: 0.22em;
+  text-transform: uppercase;
+  color: var(--color-teal);
+  text-align: center;
+}
+
+@media (min-width: 768px) {
+  .apex-team-rail-label {
+    text-align: left;
+  }
+}
+
+.apex-team-carousel {
+  --team-card-w: min(70vw, 13rem);
+  --team-frame-h: calc(var(--team-card-w) * 1.08);
+  --team-arrow-size: 2.5rem;
+  position: relative;
+  display: grid;
+  /* Mobile: cards full width, arrows centered under cards */
+  grid-template-columns: 1fr auto auto 1fr;
+  grid-template-areas:
+    "rail rail rail rail"
+    ". prev next .";
+  align-items: center;
+  column-gap: 0.5rem;
+  row-gap: 0.85rem;
+  width: 100%;
+  min-width: 0;
+}
+
+.apex-team-side-arrow-prev {
+  grid-area: prev;
+}
+
+.apex-team-side-arrow-next {
+  grid-area: next;
+}
+
+@media (min-width: 640px) {
+  .apex-team-carousel {
+    --team-card-w: 12rem;
+  }
+}
+
+@media (min-width: 768px) {
+  .apex-team-carousel {
+    grid-template-columns: auto minmax(0, 1fr) auto;
+    grid-template-areas: "prev rail next";
+    align-items: start;
+    column-gap: 0.55rem;
+    row-gap: 0;
+  }
+
+  .apex-team-side-arrow {
+    /* Desktop: vertical center of portrait frames */
+    align-self: start;
+    margin-top: calc((var(--team-frame-h) - var(--team-arrow-size)) / 2 + 0.2rem);
+  }
+}
+
+@media (min-width: 1100px) {
+  .apex-team-carousel {
+    --team-card-w: 12.75rem;
+  }
+}
+
+.apex-team-side-arrow {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: var(--team-arrow-size);
+  height: var(--team-arrow-size);
+  flex-shrink: 0;
+  border-radius: 999px;
+  border: 1.5px solid rgba(12, 48, 96, 0.18);
+  background: #fff;
+  color: var(--color-navy);
+  cursor: pointer;
+  box-shadow: 0 6px 16px rgba(8, 31, 66, 0.08);
+  transition:
+    background 0.2s ease,
+    border-color 0.2s ease,
+    color 0.2s ease,
+    opacity 0.2s ease;
+}
+
+.apex-team-side-arrow svg {
+  width: 1.05rem;
+  height: 1.05rem;
+}
+
+.apex-team-side-arrow:hover:not(:disabled) {
+  border-color: rgba(40, 128, 112, 0.4);
+  color: var(--color-teal-deep);
+  background: rgba(40, 128, 112, 0.06);
+}
+
+.apex-team-side-arrow:disabled {
+  opacity: 0.35;
+  cursor: default;
+  box-shadow: none;
+}
+
+.apex-team-rail {
+  grid-area: rail;
+  list-style: none;
+  margin: 0;
+  padding: 0.2rem 0.15rem 0.65rem;
+  display: flex;
+  gap: 1.1rem;
+  overflow-x: auto;
+  overscroll-behavior-x: contain;
+  scroll-snap-type: x mandatory;
+  -webkit-overflow-scrolling: touch;
+  scrollbar-width: none;
+  min-width: 0;
+}
+
+.apex-team-rail::-webkit-scrollbar {
+  display: none;
+}
+
+.apex-team-rail-item {
+  flex: 0 0 var(--team-card-w);
+  scroll-snap-align: start;
+}
+
+.apex-team-person {
+  display: flex;
+  flex-direction: column;
+  min-width: 0;
+  height: 100%;
+}
+
+.apex-team-frame {
+  position: relative;
+  aspect-ratio: 1 / 1.08;
+  overflow: hidden;
+  border-radius: 1rem;
+  background: #e4ebf3;
+}
+
+.apex-team-photo {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center 12%;
+  display: block;
+  border-radius: inherit;
+  transition: transform 0.55s cubic-bezier(0.22, 1, 0.36, 1);
+}
+
+.apex-team-person:hover .apex-team-photo,
+.apex-team-owner:hover .apex-team-photo {
+  transform: scale(1.03);
+}
+
+.apex-team-meta {
+  padding-top: 0.75rem;
+  text-align: center;
+}
+
+@media (min-width: 768px) {
+  .apex-team-meta {
+    text-align: left;
+  }
+}
+
+.apex-team-badge {
+  margin: 0 0 0.3rem;
+  font-family: var(--font-sans);
+  font-size: 0.75rem;
+  font-weight: 700;
+  letter-spacing: 0.22em;
+  text-transform: uppercase;
+  color: var(--color-teal);
+}
+
+.apex-team-name {
+  margin: 0;
+  font-size: 1.12rem;
+  line-height: 1.25;
+  color: var(--color-navy);
+}
+
+.apex-team-name-lg {
+  font-size: clamp(1.45rem, 2.4vw, 1.85rem);
+}
+
+.apex-team-creds {
+  font-weight: 500;
+  font-size: 0.92em;
+  color: var(--color-navy-soft);
+}
+
+.apex-team-role {
+  margin: 0.35rem 0 0;
+  font-family: var(--font-sans);
+  font-size: 0.9rem;
+  font-weight: 600;
+  line-height: 1.4;
+  color: var(--color-teal-deep);
+}
+
+.apex-team-focus {
+  margin: 0.3rem 0 0;
+  font-family: var(--font-sans);
+  font-size: 0.95rem;
+  line-height: 1.45;
+  color: var(--color-muted);
+}
+
+.apex-team-foot {
+  display: flex;
+  justify-content: center;
+  margin-top: 1.75rem;
+}
+
+@media (min-width: 768px) {
+  .apex-team-foot {
+    justify-content: flex-start;
+  }
+}
+
+.apex-team-link {
+  display: inline-flex;
+  align-items: center;
+  font-family: var(--font-sans);
+  font-size: 0.875rem;
+  font-weight: 600;
+  letter-spacing: 0.02em;
+  color: var(--color-navy-soft);
+  text-decoration: none;
+  padding: 0.55rem 1.15rem;
+  border: 1.5px solid rgba(12, 48, 96, 0.22);
+  border-radius: 999px;
+  transition:
+    color 0.2s ease,
+    border-color 0.2s ease,
+    background 0.2s ease;
+}
+
+.apex-team-link:hover {
+  color: var(--color-teal-deep);
+  border-color: rgba(40, 128, 112, 0.45);
+  background: rgba(40, 128, 112, 0.06);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .apex-team-person:hover .apex-team-photo,
+  .apex-team-owner:hover .apex-team-photo {
+    transform: none;
+  }
+
+  .apex-team-rail {
+    scroll-snap-type: none;
+  }
 }
 
 /* ——— Reveal ——— */

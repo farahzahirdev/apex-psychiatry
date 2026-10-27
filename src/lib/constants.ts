@@ -1,5 +1,5 @@
 /** Bump when replacing files in public/images so caches refresh */
-const IMG_V = "20261027d";
+const IMG_V = "20261027h";
 
 const img = (publicPath: string) => `${publicPath}?v=${IMG_V}`;
 const imgPath = (publicPath: string) => publicPath;
@@ -32,9 +32,95 @@ export const FORM_SECTION_ID = "qualify";
 export const TMS_SECTION_ID = "tms";
 export const SPRAVATO_SECTION_ID = "spravato";
 export const WHY_SECTION_ID = "why-apex";
+export const TEAM_SECTION_ID = "team";
 export const INSURANCE_SECTION_ID = "insurance";
 export const LOCATIONS_SECTION_ID = "locations";
 export const FINAL_CTA_SECTION_ID = "get-started";
+
+export const TEAM_PAGE_URL = "https://www.apex-psych.com/meet-our-team";
+
+export const TEAM_MEMBERS = [
+  {
+    id: "perry-githens",
+    name: "Perry Githens",
+    credentials: "APRN",
+    role: "Psychiatric Mental Health Nurse Practitioner",
+    focus: "Mood, trauma, ADHD, and substance use",
+    image: imgPath("/images/team/perry-githens.jpg"),
+    featured: true,
+    bio: "Perry is the Owner and CEO of Apex Interventional Psychiatry LLC and Connecticut TMS LLC. He holds a master's degree in psychiatric nursing from Wilkes University and board certification through ANCC in psychiatry. His expertise spans medication management for depression, bipolar disorder, PTSD, ADHD, autism spectrum disorder, and substance use disorders including alcoholism and opioid use disorder.",
+  },
+  {
+    id: "basia-murzynski",
+    name: "Basia Murzynski",
+    credentials: "MSN, APRN, PMHNP-BC",
+    role: "Psychiatric Mental Health Nurse Practitioner",
+    focus: "Mood disorders, anxiety, substance use",
+    image: imgPath("/images/team/basia-murzynski.jpg"),
+    featured: false,
+    bio: "Basia is a board-certified Psychiatric Mental Health Nurse Practitioner specializing in evaluation, diagnosis, and treatment across the lifespan. She brings extensive inpatient and outpatient experience, with a compassionate, patient-centered approach that integrates biological, psychological, and social aspects of mental health.",
+  },
+  {
+    id: "chinedu-ibemadu",
+    name: "Chinedu Ibemadu",
+    credentials: "PMHNP-BC",
+    role: "Psychiatric Mental Health Nurse Practitioner",
+    focus: "Pediatric, adolescent, and adult care",
+    image: imgPath("/images/team/chinedu-ibemadu.jpg"),
+    featured: false,
+    bio: "Chinedu provides compassionate, holistic psychiatric care across age groups. His clinical experience includes The Institute of Living, Connecticut DMHAS, Albert J. Solnit Psychiatric Center, and other respected Connecticut behavioral health organizations. He earned his Advanced Nursing Practitioner degree in Psychiatric/Mental Health Nursing from the University of Saint Joseph.",
+  },
+  {
+    id: "vincenzo-torizzo",
+    name: "Vincenzo Torizzo",
+    credentials: "LPC",
+    role: "Licensed Professional Counselor",
+    focus: "CBT, DBT, and trauma-informed counseling",
+    image: imgPath("/images/team/vincenzo-torizzo.jpg"),
+    featured: false,
+    bio: "Vincenzo is board-certified by the ACA and NBCC. He supports clients facing depression, anxiety, OCD, bipolar disorder, PTSD, ADHD, and stress. His approach blends client-centered care with evidence-based modalities including CBT, DBT, ACT, and ERP. He offers virtual and in-person appointments in New Milford and Torrington.",
+  },
+  {
+    id: "meghan-komaromi",
+    name: "Meghan Komaromi",
+    credentials: "LCSW",
+    role: "Licensed Clinical Social Worker",
+    focus: "Anxiety, grief, and life transitions",
+    image: imgPath("/images/team/meghan-komaromi.jpg"),
+    featured: false,
+    bio: "Meghan has more than 25 years of experience helping adults navigate anxiety, depression, stress, grief, trauma, and major life transitions. She integrates CBT, Motivational Interviewing, strengths-based therapy, and trauma-informed care in a warm, collaborative space.",
+  },
+  {
+    id: "margaret-scalia",
+    name: "Margaret Scalia",
+    credentials: "APRN",
+    role: "Advanced Practice Registered Nurse",
+    focus: "Psychopharmacology and geriatric psychiatry",
+    image: imgPath("/images/team/margaret-scalia.jpg"),
+    featured: false,
+    bio: "Margaret is a board-certified Advanced Nurse Practitioner with over twenty years in medicine. Her clinical focus is psychopharmacology, with particular interest in geriatric psychiatry and the intersections of aging, chronic medical conditions, and mental health.",
+  },
+  {
+    id: "laura-motasky",
+    name: "Laura Motasky",
+    credentials: "LMSW",
+    role: "Licensed Master Social Worker",
+    focus: "Geriatrics, aging, and grief counseling",
+    image: imgPath("/images/team/laura-motasky.jpg"),
+    featured: false,
+    bio: "Laura believes therapy is a collaborative, non-judgmental space for healing and growth. With over 12 years of experience and specialized knowledge in geriatrics and grief counseling, she walks alongside clients as they build resilience and lasting well-being.",
+  },
+  {
+    id: "aurora-tafuto",
+    name: "Aurora Tafuto",
+    credentials: "APRN",
+    role: "Psychiatric Mental Health Nurse Practitioner",
+    focus: "Anxiety, OCD, and trauma-related care",
+    image: imgPath("/images/team/aurora-tafuto.jpg"),
+    featured: false,
+    bio: "Aurora is a board-certified PMHNP with 10 years of nursing experience across acute care and trauma settings. She completed a postgraduate PMHNP Residency with the U.S. Department of Veterans Affairs. Her interests include anxiety, OCD, trauma, substance use, perinatal mental health, and complex psychiatric needs.",
+  },
+] as const;
 
 export const FORM_ID = "WrgtS55txBl13oFX83zO";
 export const FORM_IFRAME_ID = "inline-WrgtS55txBl13oFX83zO";

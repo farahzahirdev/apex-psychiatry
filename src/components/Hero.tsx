@@ -24,10 +24,9 @@ export default function Hero() {
           alt=""
           fill
           priority
-          quality={95}
+          quality={100}
           sizes="100vw"
           className="apex-hero-img"
-          unoptimized
         />
       </div>
       <div className="apex-hero-veil" aria-hidden />
