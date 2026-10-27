@@ -1,5 +1,5 @@
 /** Bump when replacing files in public/images so caches refresh */
-const IMG_V = "20261027c";
+const IMG_V = "20261027d";
 
 const img = (publicPath: string) => `${publicPath}?v=${IMG_V}`;
 const imgPath = (publicPath: string) => publicPath;

@@ -18,8 +18,8 @@ export default function TmsSection() {
               <Image
                 src={IMAGES.tms}
                 alt={`${DEVICE_NAME} TMS therapy session at Apex Interventional Psychiatry`}
-                width={1365}
-                height={768}
+                width={1024}
+                height={576}
                 quality={95}
                 sizes="(max-width: 900px) 100vw, 52vw"
                 className="apex-split-img apex-img-tms"
