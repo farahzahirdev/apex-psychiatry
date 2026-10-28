@@ -244,7 +244,7 @@ export default function Header() {
             </a>
             <a
               href={`#${FORM_SECTION_ID}`}
-              className="btn btn-teal btn-header-cta whitespace-nowrap"
+              className="btn btn-gold btn-header-cta whitespace-nowrap"
             >
               Find Out If You Qualify
             </a>

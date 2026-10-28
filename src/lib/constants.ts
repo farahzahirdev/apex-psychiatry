@@ -1,5 +1,5 @@
 /** Bump when replacing files in public/images so caches refresh */
-const IMG_V = "20261027h";
+const IMG_V = "20261028a";
 
 const img = (publicPath: string) => `${publicPath}?v=${IMG_V}`;
 const imgPath = (publicPath: string) => publicPath;
@@ -18,10 +18,10 @@ export const FAVICON = img("/images/favicon.png");
 
 export const IMAGES = {
   hero: imgPath("/images/hero.jpg"),
-  mountain: imgPath("/images/mountain.jpg"),
+  mountain: imgPath("/images/why-home.jpg"),
   tms: imgPath("/images/tms.jpg"),
   spravato: imgPath("/images/spravato.jpg"),
-  why: imgPath("/images/mountain.jpg"),
+  why: imgPath("/images/why-home.jpg"),
   faq: imgPath("/images/faq.jpg"),
 } as const;
 

@@ -54,11 +54,11 @@ export default function WhyApex() {
             <div className="apex-why-media">
               <Image
                 src={IMAGES.why}
-                alt="Mountain summit reflecting the Apex commitment to elevated psychiatric care"
+                alt="Medication bottles, water, and a tablet on a home table, reflecting everyday psychiatric care"
                 fill
                 quality={95}
                 sizes="(max-width: 1024px) 100vw, 520px"
-                className="apex-why-img apex-img-mountain"
+                className="apex-why-img apex-img-why"
                 unoptimized
               />
             </div>
