@@ -37,7 +37,7 @@ export default function HeroBleed() {
             </h1>
 
             <p className="apex-hero-lede">
-              Advanced, FDA-approved treatments like TMS and Spravato. Personalized,
+              Advanced, FDA-cleared TMS and FDA-approved Spravato. Personalized,
               compassionate care so you can feel like yourself again.
             </p>
 
@@ -62,10 +62,10 @@ export default function HeroBleed() {
         <div className="apex-hero-meta" aria-label="Care highlights">
           <div className="container-main">
             <ul className="apex-hero-meta-list">
-              <li>FDA-approved care</li>
+              <li>FDA-cleared TMS</li>
               <li>BrainsWay TMS</li>
               <li>Spravato®</li>
-              <li>CT · NY · FL</li>
+              <li>Connecticut care</li>
             </ul>
           </div>
         </div>

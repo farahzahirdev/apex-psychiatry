@@ -36,7 +36,7 @@ export default function TmsSection() {
               </h2>
               <p className="text-lead mt-4">
                 Transcranial Magnetic Stimulation uses focused magnetic pulses to activate nerve
-                cells involved in mood. It is FDA-approved and may help adults with depression,
+                cells involved in mood. It is FDA-cleared and may help adults with depression,
                 anxiety, or OCD who have not found full relief from traditional treatments.
               </p>
               <ul className="apex-expect-list">

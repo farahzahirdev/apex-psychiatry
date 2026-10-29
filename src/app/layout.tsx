@@ -7,7 +7,7 @@ import Footer from "@/components/Footer";
 export const metadata: Metadata = {
   title: "Apex Interventional Psychiatry | TMS & Spravato®",
   description:
-    "FDA-approved TMS and Spravato® for treatment-resistant depression, anxiety, and OCD. Locations in CT and NY, telehealth across CT, NY, and FL. Find out if you qualify. Call (860) 799-8344.",
+    "FDA-cleared TMS and FDA-approved Spravato® for treatment-resistant depression, anxiety, and OCD. Four Connecticut locations plus telehealth. Find out if you qualify. Call (860) 799-8344.",
   icons: {
     icon: [
       { url: "/favicon.ico", sizes: "any" },
@@ -23,12 +23,12 @@ export const metadata: Metadata = {
     "treatment-resistant depression",
     "BrainsWay TMS",
     "Torrington psychiatry",
-    "Beacon NY psychiatry",
+    "Waterbury psychiatry",
   ],
   openGraph: {
     title: "Apex Interventional Psychiatry | TMS & Spravato®",
     description:
-      "See if you qualify for FDA-approved TMS or Spravato®. Compassionate integrative care in CT, NY, and FL.",
+      "See if you qualify for FDA-cleared TMS or FDA-approved Spravato®. Compassionate integrative care across Connecticut.",
     locale: "en_US",
     type: "website",
   },

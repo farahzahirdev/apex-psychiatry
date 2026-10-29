@@ -9,10 +9,10 @@ import {
 } from "@/lib/constants";
 
 const TRUST_ITEMS = [
-  "FDA-approved care",
+  "FDA-cleared TMS",
   "BrainsWay TMS",
   "Spravato®",
-  "CT · NY · FL",
+  "4 CT locations",
 ] as const;
 
 export default function Hero() {
@@ -93,8 +93,8 @@ export default function Hero() {
               </h1>
 
               <p className="apex-hero-lede">
-                Advanced, FDA-approved TMS and Spravato care with a clinical team that meets you
-                where you are. Clear next steps, without another guess.
+                Advanced, FDA-cleared TMS and FDA-approved Spravato care with a clinical team that
+                meets you where you are. Clear next steps, without another guess.
               </p>
 
               <div className="apex-hero-actions">
@@ -145,16 +145,7 @@ export default function Hero() {
                     Technology
                   </p>
                   <p className="apex-hero-tab-title">BrainsWay TMS</p>
-                  <p className="apex-hero-tab-meta">FDA-approved option</p>
-                </article>
-
-                <article className="apex-hero-tab apex-hero-tab-br">
-                  <p className="apex-hero-tab-label">
-                    <span className="apex-hero-tab-dot" />
-                    Service area
-                  </p>
-                  <p className="apex-hero-tab-title">CT · NY · FL</p>
-                  <p className="apex-hero-tab-meta">Licensed &amp; serving patients</p>
+                  <p className="apex-hero-tab-meta">FDA-cleared option</p>
                 </article>
               </div>
             </div>

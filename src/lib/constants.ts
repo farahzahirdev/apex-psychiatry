@@ -1,5 +1,5 @@
 /** Bump when replacing files in public/images so caches refresh */
-const IMG_V = "20261028a";
+const IMG_V = "20261029a";
 
 const img = (publicPath: string) => `${publicPath}?v=${IMG_V}`;
 const imgPath = (publicPath: string) => publicPath;
@@ -150,13 +150,13 @@ export const LOCATIONS = [
     address: "507 East Main Street, STE 104, Torrington, CT 06790",
   },
   {
-    name: "Beacon, NY",
-    address: "Serving Beacon and the greater New York area",
+    name: "Waterbury, CT",
+    address: "228 Meadow Street, STE 302, Waterbury, CT 06702",
   },
 ] as const;
 
 export const SERVICE_AREAS =
-  "Licensed and serving patients in Connecticut, New York, and Florida. In-person and telehealth.";
+  "Four Connecticut locations with in-person care and telehealth across the state.";
 
 export const INSURANCE_LOGOS = [
   {
@@ -206,7 +206,7 @@ export const INSURANCE_LOGOS = [
 export const INSURANCE_EXTRA = ["Medicaid"] as const;
 
 export const TMS_POINTS = [
-  "Non-invasive, FDA-approved magnetic stimulation",
+  "Non-invasive, FDA-cleared magnetic stimulation",
   "Used for depression, anxiety, and OCD when medications fall short",
   "No anesthesia. Most people return to their day afterward",
   `Delivered with ${DEVICE_NAME} TMS technology`,
@@ -228,12 +228,12 @@ export const WHY_ITEMS = [
   {
     title: "Advanced treatments, carefully guided",
     description:
-      "FDA-approved TMS and Spravato® are offered with compassionate evaluation so you know what may fit.",
+      "FDA-cleared TMS and FDA-approved Spravato® are offered with compassionate evaluation so you know what may fit.",
   },
   {
     title: "Multi-location access plus telehealth",
     description:
-      "Offices in New Milford, Southbury, Torrington, and Beacon, with virtual care when appropriate.",
+      "Offices in New Milford, Southbury, Torrington, and Waterbury, with virtual care when appropriate.",
   },
   {
     title: "Insurance-aware support",
@@ -251,7 +251,7 @@ export const FAQ_ITEMS = [
   {
     question: "What is BrainsWay TMS?",
     answer:
-      "Apex Psychiatry offers TMS using BrainsWay technology. TMS uses focused magnetic pulses to stimulate mood-related brain circuits. Sessions are non-invasive and do not require anesthesia.",
+      "Apex Psychiatry offers TMS using BrainsWay technology. TMS uses focused magnetic pulses to stimulate mood-related brain circuits. Sessions are non-invasive and do not require anesthesia. BrainsWay TMS is FDA-cleared.",
   },
   {
     question: "Do you accept insurance?",
@@ -261,7 +261,7 @@ export const FAQ_ITEMS = [
   {
     question: "Where do you see patients?",
     answer:
-      "We have offices in New Milford, Southbury, and Torrington, Connecticut, and Beacon, New York. We also offer telehealth and are licensed to serve patients in CT, NY, and FL.",
+      "We have four Connecticut offices in New Milford, Southbury, Torrington, and Waterbury. We also offer telehealth across Connecticut.",
   },
   {
     question: "How do I get started?",

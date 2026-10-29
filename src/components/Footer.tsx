@@ -106,7 +106,7 @@ export default function Footer() {
 
         <div className="apex-footer-meta mt-6 flex flex-col items-start justify-between gap-2 border-t border-white/12 pt-5 sm:flex-row sm:items-center">
           <p>© {new Date().getFullYear()} Apex Interventional Psychiatry LLC. All rights reserved.</p>
-          <p>TMS · Spravato® · CT · NY · FL</p>
+          <p>TMS · Spravato® · Connecticut</p>
         </div>
       </div>
     </footer>

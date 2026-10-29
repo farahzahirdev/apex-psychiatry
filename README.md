@@ -24,4 +24,4 @@ Open [http://localhost:3000](http://localhost:3000).
 - Device: BrainsWay TMS
 - Form: GHL embed (`WrgtS55txBl13oFX83zO`)
 - Phone: 860-799-8344
-- Locations: New Milford, Southbury, Torrington (CT), Beacon (NY); serving CT, NY, FL
+- Locations: New Milford, Southbury, Torrington, Waterbury (CT)

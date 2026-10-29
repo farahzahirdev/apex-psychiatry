@@ -29,7 +29,7 @@ export default function HeroInset() {
             </h1>
 
             <p className="apex-hero-inset-lede">
-              Advanced, FDA-approved treatments like TMS and Spravato. Personalized,
+              Advanced, FDA-cleared TMS and FDA-approved Spravato. Personalized,
               compassionate care so you can feel like yourself again.
             </p>
 
@@ -68,10 +68,10 @@ export default function HeroInset() {
         </div>
 
         <ul className="apex-hero-inset-meta" aria-label="Care highlights">
-          <li>FDA-approved care</li>
+          <li>FDA-cleared TMS</li>
           <li>BrainsWay TMS</li>
           <li>Spravato®</li>
-          <li>CT · NY · FL</li>
+          <li>Connecticut care</li>
         </ul>
       </div>
     </section>
