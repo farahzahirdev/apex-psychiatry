@@ -127,9 +127,9 @@ export const FORM_IFRAME_ID = "inline-WrgtS55txBl13oFX83zO";
 export const FORM_NAME = "TMS: New Web Inquiry + Params";
 export const FORM_HEIGHT = "2239";
 
-export const PHONE_NUMBER = "860-799-8344";
-export const PHONE_DISPLAY = "(860) 799-8344";
-export const PHONE_HREF = "tel:+18607998344";
+export const PHONE_NUMBER = "860-787-8209";
+export const PHONE_DISPLAY = "(860) 787-8209";
+export const PHONE_HREF = "tel:+18607878209";
 export const EMAIL = "info@apex-psych.com";
 export const EMAIL_HREF = "mailto:info@apex-psych.com";
 export const WEBSITE_URL = "https://www.apex-psych.com";
@@ -266,6 +266,6 @@ export const FAQ_ITEMS = [
   {
     question: "How do I get started?",
     answer:
-      'Use the "Find out if you Qualify" form on this page, or call (860) 799-8344. Our team will help with eligibility screening and next steps.',
+      'Use the "Find out if you Qualify" form on this page, or call (860) 787-8209. Our team will help with eligibility screening and next steps.',
   },
 ] as const;

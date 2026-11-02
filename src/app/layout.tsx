@@ -7,7 +7,7 @@ import Footer from "@/components/Footer";
 export const metadata: Metadata = {
   title: "Apex Interventional Psychiatry | TMS & Spravato®",
   description:
-    "FDA-cleared TMS and FDA-approved Spravato® for treatment-resistant depression, anxiety, and OCD. Four Connecticut locations plus telehealth. Find out if you qualify. Call (860) 799-8344.",
+    "FDA-cleared TMS and FDA-approved Spravato® for treatment-resistant depression, anxiety, and OCD. Four Connecticut locations plus telehealth. Find out if you qualify. Call (860) 787-8209.",
   icons: {
     icon: [
       { url: "/favicon.ico", sizes: "any" },

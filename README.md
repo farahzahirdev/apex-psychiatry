@@ -23,5 +23,5 @@ Open [http://localhost:3000](http://localhost:3000).
 - Primary CTAs: Find out if you Qualify, Get Started
 - Device: BrainsWay TMS
 - Form: GHL embed (`WrgtS55txBl13oFX83zO`)
-- Phone: 860-799-8344
+- Phone: 860-787-8209
 - Locations: New Milford, Southbury, Torrington, Waterbury (CT)
